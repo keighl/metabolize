@@ -44,6 +44,7 @@ func Test_ParseDocument(t *testing.T) {
 <html prefix="og: http://ogp.me/ns#">
 <head>
 <title>The Rock (1996)</title>
+<meta name="description" content="MMMK" />
 <meta property="" content="your mom" />
 <meta property="title" content="The Rock" />
 <meta property="og:title" content="The Rock" />
@@ -56,6 +57,7 @@ func Test_ParseDocument(t *testing.T) {
 </html>
 	`
 	expectedData := MetaData{
+		"description": "MMMK",
 		"title":    "The Rock",
 		"og:title": "The Rock",
 		"og:type":  "video.movie",

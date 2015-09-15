@@ -136,7 +136,7 @@ func ParseDocument(doc io.Reader) (MetaData, error) {
 			var property, content string
 			for _, attr := range token.Attr {
 				switch attr.Key {
-				case "property":
+				case "property", "name":
 					property = strings.ToLower(attr.Val)
 				case "content":
 					content = attr.Val
