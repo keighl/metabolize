@@ -59,7 +59,7 @@ func main() {
 }
 ```
 
-Output:
+Outputs:
 
 ```
 Title: The Sneezing Baby Panda
